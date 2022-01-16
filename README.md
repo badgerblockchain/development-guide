@@ -1,2 +1,2 @@
-# development-guide
-Badger Blockchain development curriculum guide
+# Badger Blockchain Development Curriculum
+A resource guide that will follow our development meetings
