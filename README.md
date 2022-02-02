@@ -3,7 +3,8 @@ The guide for our dapp development curriculum. Resources and topics discussed at
 
 ## Outcomes
 By following this guide you should be able to build a basic decentralized app that can be deployed to any solidity-friendly blockchain.  
-Additional outcomes:
+
+Additional outcomes:  
 - Solidity basics
 - Dapp enviornment setup
 - Common smart contract vulnerabilites
