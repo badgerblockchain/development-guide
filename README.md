@@ -18,6 +18,4 @@ Additional outcomes:
 
 
 ### Authors
-Jared Blinken: email <blinken@wisc.edu> discord *jmb#2223*  
-Pat Stiles: email <pdstiles@wisc.edu> discord *pstylez78#4758*  
 Dylan Melotik: email <dmelotik@wisc.edu> discord *melodyl#2639*    
