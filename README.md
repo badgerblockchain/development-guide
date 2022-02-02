@@ -17,5 +17,5 @@ Additional outcomes:
 + Block 1: [TODO]()
 
 
-### Authors
+### Author(s)
 Dylan Melotik: email <dmelotik@wisc.edu> discord *melodyl#2639*    
