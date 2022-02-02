@@ -2,7 +2,8 @@
 The guide for our dapp development curriculum. Resources and topics discussed at meetings will be contained within this repository. You can follow along with this bare bones framework of our dapp [TODO: create game framework repo]().
 
 ## Outcomes
-By following this guide you should be able to build a basic decentralized app that can be deployed to any solidity-friendly blockchain.  Additionally you will learn:
+By following this guide you should be able to build a basic decentralized app that can be deployed to any solidity-friendly blockchain.  
+Additional outcomes:
 - Solidity basics
 - Dapp enviornment setup
 - Common smart contract vulnerabilites
