@@ -25,7 +25,6 @@ A developer stack is all of the tools and frameworks used in order to create an 
 - Frontend Language: React JavaScript
 - Solidity Development Enviornment: Hardhat
 - Testing Framework: [Mocha / Chai](https://www.codecademy.com/article/bapi-testing-intro) / [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/index.html)
-- 
 
 
 ## Getting Familiar with the Project
