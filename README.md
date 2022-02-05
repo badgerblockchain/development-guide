@@ -14,7 +14,7 @@ Additional outcomes:
 
 ## Learning Blocks
 + Introduction: [Introductory Block](https://github.com/badgerblockchain/development-guide/blob/main/introduction.md)
-+ Block 1: [TODO]()
++ Block 1: [ERC721 Contract and Badger Attributes](https://github.com/badgerblockchain/development-guide/blob/main/01-erc721-badgers.md)
 
 
 ### Author(s)
