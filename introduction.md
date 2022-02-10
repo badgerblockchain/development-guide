@@ -7,7 +7,10 @@ By following this introductory block you will be able to setup your workspace fo
 
 Before you can follow this tutorial you will need to have a few things installed on your computer.
 
-+ Install an IDE. Any will work if you are comfortable with it, but we are using [Visual Studio Code](https://code.visualstudio.com/download)
++ Install an IDE. Any will work if you are comfortable with it, but we are using [Visual Studio Code](https://code.visualstudio.com/download). Below is a list of extensions (plug ins) you should have if you are using VS Code. [How to install plugins](https://code.visualstudio.com/learn/get-started/extensions)
+  + [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
+  + [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
+  + [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 + Download [NodeJS](https://nodejs.org/en/download/) >16.13.1 for your system
   + If you are on Windows you will need to add Node to your env variables PATH. Follow this [stack overflow answer](https://stackoverflow.com/a/27864253)
 + A [GitHub](https://github.com/) account
@@ -153,3 +156,4 @@ A list of useful resources we found while creating this learning block:
 - For other Hardhat questions visit their [documentation](https://hardhat.org/getting-started/)
 - Our repo is inspired by [Hardhat's Boilerplate](https://github.com/nomiclabs/hardhat-hackathon-boilerplate)
 - Here is the documentation for different frameworks utilized: [Ethers.js](https://docs.ethers.io/v5/), [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/), [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/)
+- Other development resources: [here](https://web3.career/learn-web3)
