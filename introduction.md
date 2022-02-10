@@ -1,4 +1,4 @@
-# Introductory Block: Enviornment Setup
+# Introductory Block: Environment Setup
 
 By following this introductory block you will be able to setup your workspace for blockchain development.
 
@@ -23,10 +23,10 @@ Before you can follow this tutorial you will need to have a few things installed
 
 A developer stack is all of the tools and frameworks used in order to create an app. In our case a decentralized application.
 
-- IDE (integrated development enviornment): VS Code, if you are comfortable use whatever
+- IDE (integrated development environment): VS Code, if you are comfortable use whatever
 - Backend Language: Solidity
 - Frontend Language: React JavaScript
-- Solidity Development Enviornment: Hardhat
+- Solidity Development Environment: Hardhat
 - Testing Framework: [Mocha / Chai](https://www.codecademy.com/article/bapi-testing-intro) / [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/index.html)
 
 
@@ -60,7 +60,7 @@ npm install --save-dev hardhat
 
 > **Note:** Hardhat must install some Ethereum JavaScript dependencies, so it may take some time. Patience.
 
-Congratulations! You now have your blockchain development enviornment setup! It is important to note that all Hardhat commands use the prefix `npx` instead of `npm`, even though hardhat is a Node framework.
+Congratulations! You now have your blockchain development environment setup! It is important to note that all Hardhat commands use the prefix `npx` instead of `npm`, even though hardhat is a Node framework.
 
 
 ### Writing and Compiling
