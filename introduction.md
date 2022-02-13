@@ -56,6 +56,8 @@ Now we have the project skeleton on our computer. Next we will need to create a 
 npm init
 npm install --save-dev hardhat
 ```
+> If you are having trouble installing Hardhat with node, try using Yarn.
+
 > After `npm init` just click (Enter) for each of the prompts
 
 > **Note:** Hardhat must install some Ethereum JavaScript dependencies, so it may take some time. Patience.
