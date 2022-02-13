@@ -60,7 +60,7 @@ npm install --save-dev hardhat
 
 > **Note:** Hardhat must install some Ethereum JavaScript dependencies, so it may take some time. Patience.
 
-Congratulations! You now have your blockchain development environment setup! It is important to note that all Hardhat commands use the prefix `npx` instead of `npm`, even though hardhat is a Node framework.
+Congratulations! You now have your blockchain development environment setup! It is important to note that all Hardhat commands use the prefix `npx` instead of `npm`. `npx` executes packages, while `npm` installs different packages.
 
 
 ### Writing and Compiling
@@ -78,7 +78,7 @@ npx hardhat compile
 If done correctly you should see the following (potentially among other things)
 
 ```sh
-Compiling x files with 0.8.11
+Compiling x files with 0.8.9
 Solidity compilation finished successfully
 ```
 
