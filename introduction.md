@@ -128,7 +128,7 @@ Trying to send 50 tokens to 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc
 **Tip:** Hardhat comes with a nice built-in local Ethereum network called Hardhat Network. by using the import statement `import "hardhat/console.sol";` at the top of any contract you can now call `console.log(...)` within the contract. When you run tests it will print to the terminal.
 
 
-### Deploying to a Live Testnet
+### Deploying to a Testnet
 
 A testnet (test network) is acts like the real blockchain; however, there are no real funds being moved around. In our case it is a local network that we can use for testing purposes. On the other hand, the mainnet is where the actual transactions take place on the distributed ledger (*ie,* Ethereum and Avalanche).
 
@@ -146,7 +146,7 @@ Account balance: 10000000000000000000000
 Token address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 ```
 
-> If you want to learn how to deploy to remote networks this is a good place to start: [Hardhat tutorial](https://hardhat.org/tutorial/deploying-to-a-live-network.html#deploying-to-remote-networks). That would allow you to a testnet that can be accessed by multiple people. Generally used by teams making dapps.
+> If you want to learn how to deploy to live testnets this is a good place to start: [Hardhat tutorial](https://hardhat.org/tutorial/deploying-to-a-live-network.html#_7-deploying-to-a-live-network). That will allow you to test on a live testnet that can be accessed by multiple people. Generally used by teams making dapps.
 
 
 ## Resources
