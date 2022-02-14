@@ -55,6 +55,8 @@ Now we have the project skeleton on our computer. Next we will need to create a 
 ```sh
 npm init
 npm install --save-dev hardhat
+TODO: if cloning you only have to run:
+npm install
 ```
 > If you are having trouble installing Hardhat with node, try using Yarn.
 

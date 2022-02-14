@@ -16,3 +16,7 @@ https://medium.com/loom-network/how-to-code-your-own-cryptokitties-style-game-on
 erc721 vs erc20 
 
 https://soliditydeveloper.com/erc-721
+
+starting local testnet with deploy: https://www.quicknode.com/guides/web3-sdks/how-to-build-your-dapp-using-the-modern-ethereum-tech-stack-hardhat-and-ethersjs
+
+
