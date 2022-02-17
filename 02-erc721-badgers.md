@@ -1,4 +1,4 @@
-# Block One: Building the First Contracts
+# Block Two: Building the First Contracts
 
 ## Goal
 create badger erc721 contract and badger attributes/mechanics

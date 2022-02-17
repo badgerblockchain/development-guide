@@ -39,28 +39,23 @@ You can find the starting blocks of the app we will be building out [here](https
 
 In order to write your own code you will need to have our starter code on your machine. Let's start by navigating to [Badger Blocks](https://github.com/badgerblockchain/badger-blocks) on GitHub.
 
-Start by copying the HTTPS link from the green dropdown
+Start by copying the https link from the green drop down
 
 <img src="images/clone-repo.PNG" alt="drawing" width="375"/>
 
 Jump over to your command line and clone the repository and install dependencies:
 
 ```sh
-git clone https://github.com/badgerblockchain/badger-blocks.git
-cd badger-blocks
+$ git clone https://github.com/badgerblockchain/badger-blocks.git
+$ cd badger-blocks
 ```
 
-Now we have the project skeleton on our computer. Next we will need to create a local instance of Hardhat to avoid future version conflicts. We must start by creating an `npm` project:
+Now we have the project skeleton on our computer. Next we will need to create a local instance of Hardhat to avoid future version conflicts. We must start by installing the `npm` dependencies associated with the project (you can find them in `./badger-blocks/package-lock.json`):
 
 ```sh
-npm init
-npm install --save-dev hardhat
-TODO: if cloning you only have to run:
-npm install
+$ npm install
 ```
 > If you are having trouble installing Hardhat with node, try using Yarn.
-
-> After `npm init` just click (Enter) for each of the prompts
 
 > **Note:** Hardhat must install some Ethereum JavaScript dependencies, so it may take some time. Patience.
 
@@ -76,7 +71,7 @@ Our smart contracts will live within the directory `/contracts`. This is where y
 In order to compile our smart contracts to run/test you can run the following command:
 
 ```sh
-npx hardhat compile
+$ npx hardhat compile
 ```
 
 If done correctly you should see the following (potentially among other things)
@@ -96,7 +91,7 @@ The tests we write in this tutorial will be written in JavaScript by using the t
 To test simply use the following command:
 
 ```sh
-npx hardhat test
+$ npx hardhat test
 ```
 
 And you should see something like this:
@@ -127,7 +122,7 @@ Trying to send 50 tokens to 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc
 
 > If that doesn't work, try this stack overflow [answer](https://stackoverflow.com/a/69699772). Do the 2nd option.
 
-**Tip:** Hardhat comes with a nice built-in local Ethereum network called Hardhat Network. by using the import statement `import "hardhat/console.sol";` at the top of any contract you can now call `console.log(...)` within the contract. When you run tests it will print to the terminal.
+**Tip:** Hardhat comes with a nice built-in local Ethereum network called Hardhat Network. By using the import statement `import "hardhat/console.sol";` at the top of any contract you can now call `console.log(...)` within the contract. When you run tests it will print to the terminal.
 
 
 ### Deploying to a Testnet
@@ -137,7 +132,7 @@ A testnet (test network) is acts like the real blockchain; however, there are no
 The command to deploy to the default testnet (Hardhat Network) is:
 
 ```sh
-npx hardhat run scripts/deploy.js
+$ npx hardhat run scripts/deploy.js
 ```
 
 If that worked correctly, you should see something similar to this:
@@ -151,6 +146,38 @@ Token address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 > If you want to learn how to deploy to live testnets this is a good place to start: [Hardhat tutorial](https://hardhat.org/tutorial/deploying-to-a-live-network.html#_7-deploying-to-a-live-network). That will allow you to test on a live testnet that can be accessed by multiple people. Generally used by teams making dapps.
 
 
+## How to Publish to a Different Repo
+
+If you are looking to take this project and push it to your personal GitHub you will want to do this. Essentially we are going to change the remote url your project is pointed to and then you can push to it.
+> Note: you will not be able to pull our repo into yours again once you do this.
+
+First, create a [new](https://github.com/new) project in your personal GitHub. Add all the info you want and `Create Repository`. Then you will grab the same https link we used when cloning *for this new project*. Like this:
+
+<img src="images/clone-repo.PNG" alt="drawing" width="375"/>
+
+> The URL should have your username in the place of `badgerblockchain`
+
+Now we want to go back to our command line and make sure you are in the `./badger-blocks` directory. Do the following command:
+
+```sh
+$ git remote set-url origin https://github.com/your-username/new-repository.git
+$ git remote -v
+origin  https://github.com/your-username/new-repository.git (fetch)
+origin  https://github.com/your-username/new-repository.gitdevelopment-guide.git (push)
+```
+> If you see your new repo url you did it successfully!
+
+Now let's make your first commit to push the files to your new GitHub project:
+
+```sh
+$ git add .
+$ git commit -m "initial commit"
+$ git push origin main
+```
+
+Now you should be able to see the project on your GitHub. Good practice is to do the three commands above everytime you are done making changes. See the git guide below for more info. ([More details on this](https://devconnected.com/how-to-change-git-remote-origin/))
+
+
 ## Resources
 
 A list of useful resources we found while creating this learning block:
@@ -160,4 +187,5 @@ A list of useful resources we found while creating this learning block:
 - For other Hardhat questions visit their [documentation](https://hardhat.org/getting-started/)
 - Our repo is inspired by [Hardhat's Boilerplate](https://github.com/nomiclabs/hardhat-hackathon-boilerplate)
 - Here is the documentation for different frameworks utilized: [Ethers.js](https://docs.ethers.io/v5/), [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/), [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/)
+- A guide to [git](https://docs.github.com/en/get-started/using-git/about-git)
 - Other development resources: [here](https://web3.career/learn-web3)
