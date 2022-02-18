@@ -46,4 +46,68 @@ Under our `/contracts` folder we will see three different files. `Badger.Sol`, `
 
 This contract is a standard interface for non-fungible tokens (aka, NFTs). It outlines the basic functionality needed to track, transfer, burn, and mint NFTs. In our case this is a simpler version because we don't need all the complexity with an ERC721 such as this [one](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol).
 
-For our game, [Badger Blocks](https://github.com/badgerblockchain/badger-blocks).. TODO 
+Ours will look something like this:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity^0.8.9;
+
+abstract contract ERC721 {
+
+    // events
+    event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);
+    event Approval(address indexed _owner, address indexed _approved, uint256 indexed _tokenId);
+
+    // mappings
+    mapping(address => uint256) public balanceOf;
+    mapping(uint256 => address) public ownerOf;
+    mapping(uint256 => address) public approvals;
+
+    // functions
+    function transferFrom(address _from, address _to, uint256 _tokenId) external virtual payable;
+    function approve(address _approved, uint256 _tokenId) public virtual payable;
+    function _mint(address _to, uint256 _tokenId) internal virtual;
+    function _burn(uint256 _tokenId) internal virtual;
+
+}
+```
+
+For our game, [Badger Blocks](https://github.com/badgerblockchain/badger-blocks), those are the only functions we will need. They will take care of `minting` a Badger NFT, `burning`, `transferring`, and who owns what Badger. To familiarize ourselves, minting means creating an NFT. In Badger Blocks each player (a player is essentially your wallet address) can mint and own ONE Badger at a time. We will write logic to prevent people from creating one if they already own one.
+
+Once a Badger reaches the max level the NFT is subsequently burned. This allows a player to mint a new Badger or "buy" one that is already in circulation. Now we are starting to see what a Badger is in smart contract world and the characteristics it will have.
+
+
+### Badger.sol:
+
+This contract is where the bulk of our code that dictates a Badger's attributes and functions will reside. In our case we will inherit the ERC721.sol file and write the logic for those functions (the logic is pretty much the same as any other ERC721 so you can "copy" in a sense because it is a standard).
+
+Aside from that we will have global variables that will outline the attributes a Badger will keep. For those CS kids this will be in a struct called BadgerToken. This is the data structure for Badgers (again this is not the most gas efficient to store on chain, but we are learning) that will live on chain and can theoretically be called by any wallet or other smart contract given we make a public function to do so.
+
+The attributes a Badger will have are as follows:
+- level
+- xp
+- winCount (comes in handy when we implement attacking)
+- lossCount
+- name
+- among others that will make sense later
+
+This file does a lot of book keeping for us, but we thought it also made sense to add a few basic functions. The functionality that can be found in this contract is:
+- calculating max xp based on level
+- increasing xp by a set amount
+- decreasing xp (can happen from "gambling" or losing an attack)
+- leveling up a Badger
+- returning relevant Badger attributes to the frontend when called
+
+Now we have a better understanding of the types of things a game may implement using a smart contract surrounding data tracking and game character attributes/functionality.
+
+
+### BadgerWorld.sol:
+
+As you will come to find out this file will contain functions that deal with the things a Badger can do within the game. What I mean by that is that a Badger can attack other Badgers, bet their XP on a coin flip, claim daily xp rewards, get rewards from the master Badger (aka, Bucky).
+
+Simply these are the things that you can do within the game that we will code within the next two development sessions. One thing to note is that these functions outline game characteristics that don't necessarily have to do with how a Badger is set up. However, these functions affect the state of a Badger's attributes. Most of the functions will exhibit what we call `state changes` that affect the data of individual Badgers that is stored on chain.
+
+
+## Any Questions?
+
+Feel free to reach out to me (contact info on the [README](https://github.com/badgerblockchain/development-guide/blob/main/README.md#authors)) and you can reference the skeleton code we have uploaded to [Badger-Blocks](https://github.com/badgerblockchain/badger-blocks).
