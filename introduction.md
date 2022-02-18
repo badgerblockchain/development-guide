@@ -146,6 +146,19 @@ Token address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 > If you want to learn how to deploy to live testnets this is a good place to start: [Hardhat tutorial](https://hardhat.org/tutorial/deploying-to-a-live-network.html#_7-deploying-to-a-live-network). That will allow you to test on a live testnet that can be accessed by multiple people. Generally used by teams making dapps.
 
 
+## How to Install and Launch the Frontend
+
+Our frontend is built with ReactJS from Hardhat's boilderplate frontend. To install and start the frontend you will need to do the following commands:
+
+```sh
+cd frontend
+npm install
+npm start
+```
+> To see the frontend you need to go to the local server (http://localhost:3000/) it created on a browser.
+
+In addition you should install [Metamask](https://metamask.io/) on that browser (or another browser extension wallet). You should navigate to the `Localhost 8545` network to run with local deploys. You **NEVER** want to use your `Ethereum Mainnet` for testing. You run the risk of losing your actual Ethereum
+
 ## How to Publish to a Different Repo
 
 If you are looking to take this project and push it to your personal GitHub you will want to do this. Essentially we are going to change the remote url your project is pointed to and then you can push to it.
