@@ -202,3 +202,6 @@ A list of useful resources we found while creating this learning block:
 - Here is the documentation for different frameworks utilized: [Ethers.js](https://docs.ethers.io/v5/), [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/), [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/)
 - A guide to [git](https://docs.github.com/en/get-started/using-git/about-git)
 - Other development resources: [here](https://web3.career/learn-web3)
+
+
+Next lesson: [Solidity Smart Contract Game Layout](https://github.com/badgerblockchain/development-guide/blob/main/01-solidity-game-layout.md)

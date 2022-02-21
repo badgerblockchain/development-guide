@@ -18,5 +18,4 @@ erc721 vs erc20
 https://soliditydeveloper.com/erc-721
 
 starting local testnet with deploy: https://www.quicknode.com/guides/web3-sdks/how-to-build-your-dapp-using-the-modern-ethereum-tech-stack-hardhat-and-ethersjs
-
-
+solidity style guide: https://www.bitdegree.org/learn/solidity-syntax#style-guidelines-for-solidity and https://docs.soliditylang.org/en/v0.8.9/natspec-format.html
