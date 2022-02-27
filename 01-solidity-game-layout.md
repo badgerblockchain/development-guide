@@ -110,6 +110,8 @@ Simply these are the things that you can do within the game that we will code wi
 
 ## Any Questions?
 
+Find the Zoom recording going over this [here](https://uwmadison.zoom.us/rec/share/3OcTWl0MXRp0PaY0PRWJ-EVBqtv4xECKBRMHhx0quvBOAswPS0UibQETNwoK8g2A.twZWjm4kBEg1dJ_O).
+
 Feel free to reach out to me (contact info on the [README](https://github.com/badgerblockchain/development-guide/blob/main/README.md#authors)) and you can reference the skeleton code we have uploaded to [Badger-Blocks](https://github.com/badgerblockchain/badger-blocks).
 
 Previous lesson: [Introductory Block](https://github.com/badgerblockchain/development-guide/blob/main/introduction.md)
