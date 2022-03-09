@@ -109,4 +109,4 @@ A struct can contain any number of different [Solidity data types](https://docs.
 
 Previous Lesson: [Solidity Smart Contract Game Layout](https://github.com/badgerblockchain/development-guide/blob/main/01-solidity-game-layout.md)
 
-Next lesson: [TODO]()
+Next lesson: [More Solidity and Game Logic](https://github.com/badgerblockchain/development-guide/blob/main/02-more-solidity.md)
