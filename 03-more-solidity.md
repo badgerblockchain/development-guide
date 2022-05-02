@@ -113,4 +113,4 @@ Blockchain/web3 use cases [here](https://consensys.net/blockchain-use-cases/)
 
 Previous Lesson: [ERC721 Contract and Badger Attributes](https://github.com/badgerblockchain/development-guide/blob/main/02-erc721-badgers.md)
 
-Next lesson: [TODO]()
+Next lesson: [Closing Thoughts](https://github.com/badgerblockchain/development-guide/blob/main/04-closing-thoughts.md)

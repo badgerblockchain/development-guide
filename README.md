@@ -16,7 +16,8 @@ Additional outcomes:
 + Introduction: [Introductory Block](https://github.com/badgerblockchain/development-guide/blob/main/introduction.md)
 + Block 1: [Solidity Smart Contract Game Layout](https://github.com/badgerblockchain/development-guide/blob/main/01-solidity-game-layout.md)
 + Block 2: [ERC721 Contract and Badger Attributes](https://github.com/badgerblockchain/development-guide/blob/main/02-erc721-badgers.md)
-+ Block 3: [More Solidity and Game Logic](https://github.com/badgerblockchain/development-guide/blob/main/02-more-solidity.md)
++ Block 3: [More Solidity and Game Logic](https://github.com/badgerblockchain/development-guide/blob/main/03-more-solidity.md)
++ Block 4: [Closing Thoughts](https://github.com/badgerblockchain/development-guide/blob/main/04-closing-thoughts.md)
 
 ### Author(s)
 Dylan Melotik: email <dmelotik@wisc.edu> discord [*melodyl#2639*](https://discordapp.com/users/690685347616522293/)    
